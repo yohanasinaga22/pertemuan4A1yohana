@@ -1,0 +1,55 @@
+a, b, c = map(int, input().split())
+
+if a <= b <= c:
+    print(a, b, c)
+elif a <= c <= b:
+    print(a, c, b)
+elif b <= a <= c:
+    print(b, a, c)
+elif b <= c <= a:
+    print(b, c, a)
+elif c <= a <= b:
+    print(c, a, b)
+else:
+    print(c, b, a)
+
+usia = int (input())
+dewasa = "Anda dewasa"
+anak  = "Anda anak-anak"
+remaja = "Anda remaja"
+if usia>=18 :
+    print(dewasa)
+elif usia >=13 and usia <18 :
+    print(remaja)
+else :
+    print (anak)
+
+a, b, c = map(int, input().split())
+if a >= b and a >= c:
+    print(a)
+elif b >= a and b >= c:
+    print(b)
+else:
+    print(c)
+
+x = int(input())
+if x <= 1:
+    print ('Bukan bilangan prima')
+else :
+    prima = True 
+    i = 2 
+    while i <= x**0.5:
+        if x%i == 0:
+            prima = False 
+            break 
+        i += 1
+    if prima :
+        print ("Bilangan prima")
+    else:
+        print ("Bukan bilangan prima")
+
+string = input()
+if string == string [::-1]:
+    print("Palindrom")
+else :
+    print("Bukan palindrom")
